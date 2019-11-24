@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div id="nav-2">
-      <ul>
+      <ul class="old">
       <li @click="$refs.fullpage.api.moveTo(2,0)">AUNKIHEXUN II</li>
       <li @click="$refs.fullpage.api.moveTo(3,0)">ETHER</li>
       <li @click="$refs.fullpage.api.moveTo(4,0)">INHUMANKIND</li>
@@ -19,12 +19,12 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>-->
     <full-page :options="options" id="fullpage" ref="fullpage">
       <div class="section" id="secc1">
-        <h1 class="heavy">zarata fest<br/> 
+        <h1 class="heavy">Zarata Fest<br/> 
           <span class="circulo">13</span></h1>
       </div>
       <div class="section" id="pg2">
         <div class="slide">
-          <h3>AUNKIHEXUN II</h3>
+          <h2 class="old title">AUNKIHEXUN II</h2>
         </div>
         <div class="slide">
           <h3>Slide 2.2</h3>
@@ -34,34 +34,34 @@
         </div>
       </div>
       <div class="section">
-        <h2>ETHER</h2>
+        <h2 class="old title">ETHER</h2>
       </div>
       <div class="section">
-        <h2>INHUMANKIND</h2>
+        <h2 class="old title">INHUMANKIND</h2>
       </div>
       <div class="section">
-        <h2>DISOLVS III</h2>
+        <h2 class="old title">DISOLVS III</h2>
       </div>
       <div class="section">
-        <h2>GARAZI NAVAS</h2>
+        <h2 class="old title">GARAZI NAVAS</h2>
       </div>
       <div class="section">
-        <h2>SERPIENTE</h2>
+        <h2 class="old title">SERPIENTE</h2>
       </div>
       <div class="section">
-        <h2>DELUSION OF DEATH</h2>
+        <h2 class="old title">DELUSION OF DEATH</h2>
       </div>
       <div class="section">
-        <h2>BLACK FLOWER</h2>
+        <h2 class="old title">BLACK FLOWER</h2>
       </div>
       <div class="section">
-        <h2>MMMD</h2>
+        <h2 class="old title">MMMD</h2>
       </div>
       <div class="section">
-        <h2>IVANKOVÀ</h2>
+        <h2 class="old title">IVANKOVÀ</h2>
       </div>
       <div class="section">
-        <h2>TOTENGOTT</h2>
+        <h2 class="old title">TOTENGOTT</h2>
       </div>
     </full-page>
   </div>
@@ -74,8 +74,8 @@
         return {
             options: {
                 afterLoad: this.afterLoad,
-                navigation: true,
-                anchors: ['home', 'aunkihexun-ii', 'ether', "inhumankind", "disolvs-iii", "garazi-navas", "serpiente", "delusion-of-death", "black-flower", "mmmd", "ivankova", "totengott"],
+                navigation: false,
+                anchors: ['', 'aunkihexun-ii', 'ether', "inhumankind", "disolvs-iii", "garazi-navas", "serpiente", "delusion-of-death", "black-flower", "mmmd", "ivankova", "totengott"],
                 menu: ["#nav", "#nav2"],
                 loopHorizontal: false,
             },

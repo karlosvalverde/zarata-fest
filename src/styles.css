@@ -4,6 +4,8 @@ FONTS
 
 @import url('https://fonts.googleapis.com/css?family=UnifrakturCook:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap');
+
 .heavy{
     font-family: 'UnifrakturMaguntia', cursive;
     font-size: 10vw;
@@ -12,6 +14,23 @@ FONTS
     -webkit-text-stroke: 2px gold !important;
     border-color: gold !important;*/
     letter-spacing: -0.55vw;
+}
+
+.heavy-2{
+    font-family: 'UnifrakturMaguntia', cursive !important;
+    font-size: 2vw !important;
+    /*text-shadow: gold 0px 0px -10px;*/
+    /*color: transparent !important;
+    -webkit-text-stroke: 2px gold !important;
+    border-color: gold !important;*/
+    letter-spacing: -0.1vw !important;
+}
+
+.old{
+    font-family: 'IM Fell English SC', serif;
+}
+.title{
+    font-size: 5vw;
 }
 
 .circulo{
@@ -31,12 +50,20 @@ GENERAL
     caret-color: transparent;
 }
 
+::-moz-selection { 
+    color: crimson;
+    background: transparent;
+}
+  
+::selection {
+    color: crimson;
+    background: transparent;
+}
+
 body{
     background-color: rgb(212, 6, 47);
     background-image: url(assets/10.gif);
-    width:100%;
-    height:100%;
-    background-size:100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
 }
@@ -45,6 +72,7 @@ body{
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-weight: normal !important;
     text-align: center;
     color: gold;
 }
@@ -53,25 +81,38 @@ body{
     position: fixed;
     z-index: 9999;  
     padding: 30px;
+    font-size: 1.5vw;
+    margin: 0;
+    top: -2vw;
+    left: -3vw;
+}
+
+#nav ul{
+    list-style-type: none;
+}
+
+#nav ul li{
+    display: inline;
+    padding: 0 1vw;
 }
   
 #nav a,
 #nav-2 a {
     font-weight: bold;
     color: gold;
+    text-decoration: none;
 }
   
 #nav a.router-link-exact-active,
 #nav-2 a.router-link-exact-active {
-    color: crimson;
+    text-decoration: underline;
 }
 
 #nav-2{
     position: fixed;
     left: 0;
-    top: 60px;
+    top: 3vw;
     z-index: 9999;
-     
 }
 
 #nav-2 ul{
@@ -86,10 +127,6 @@ body{
     caret-color: transparent; 
 }
 
-#nav-2 ul li:first-child{
-    padding: 0 10px 0 0;
-}
-
 /***
 SLIDES & SECTIONS
 ***/
@@ -97,9 +134,7 @@ SLIDES & SECTIONS
 #secc1{
     background-color: rgb(212, 6, 47);
     background-image: url(assets/13.gif);
-    width:100%;
-    height:100%;
-    background-size:100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
 }
@@ -107,9 +142,7 @@ SLIDES & SECTIONS
 #secc2{
     background-color: rgb(212, 6, 47);
     background-image: url(assets/02.gif);
-    width:100%;
-    height:100%;
-    background-size:100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
 }
@@ -117,9 +150,31 @@ SLIDES & SECTIONS
 #secc3{
     background-color: rgb(212, 6, 47);
     background-image: url(assets/05.gif);
-    width:100%;
-    height:100%;
-    background-size:100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
+}
+
+/***
+ARROWS
+***/
+
+
+.fp-controlArrow.fp-prev{
+    border-color: transparent gold !important;
+    /*left: 10px;
+    border: none;
+    width: 101px;
+    height: 101px;
+    /*background: url("assets/icons/arrow-left.svg") no-repeat;
+    cursor: pointer;*/
+}
+.fp-controlArrow.fp-next{
+    border-color: transparent gold !important;
+    /*right: 10px;
+    border: none;
+    width: 101px;
+    height: 101px;
+    background: url("assets/icons/arrow-right.svg") no-repeat;
+    cursor: pointer;*/
 }

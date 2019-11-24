@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Zarata Fest XIII</router-link> |
-      <router-link to="/contacto">Contacto</router-link> |
-      <router-link to="/acerca-de-zarata-fest">Acerca de Zarata Fest</router-link>
-      
+      <ul>
+        <li><router-link to="/" class="heavy-2">Zarata Fest 13</router-link></li>
+        <li><router-link to="/contacto" class="old">contacto</router-link></li>
+        <li><router-link to="/acerca-de-zarata-fest" class="old">acerca de zarata fest</router-link></li>
+      </ul>
     </div>
     <router-view/>
 
   </div>
 </template>
-
